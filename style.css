@@ -1,3 +1,7 @@
+body {
+    background-color: lavendergi;
+}
+
 header {
     text-align: center;
     padding-bottom: 100px;
@@ -25,24 +29,27 @@ header {
 }
 
 
-#nome > h3{
+h3{
     font-weight: bold;
 }
 
 
-
 #habilidades {
     /* background: rgb(17, 202, 202); */
-    padding-top: 5px; 
+    margin-top: 55px; 
 }
 
-#habilidades > ul {
+ul {
      list-style-type: none; 
-     margin-left:-40px;
-    
+     margin-left:-40px;   
 }
 
-#habilidades > strong > a {
+a {
     color: rgba(255, 255, 255, 0.671);
     text-decoration: none;
 }
+
+#indice {
+    margin-top: 50px; 
+}
+
