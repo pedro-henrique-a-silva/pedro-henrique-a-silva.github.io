@@ -1,21 +1,20 @@
 header {
     text-align: center;
     padding-bottom: 100px;
+    font-size: xx-large;
 }
 
 #container {
-    background-color: brown;
+    background-color: rgb(11, 102, 23);
     width: 700px;
     height: 700px; 
     margin-left: auto;
     margin-right: auto; 
     border-radius: 10%;
+    text-align: center;
+    color: white;
 }
 
-#perfil {
-    text-align: center;
-    background: rgba(0, 47, 255, 0.3)
-}
 
 #perfil > img {
     margin-top: -50px; 
@@ -25,20 +24,25 @@ header {
 
 }
 
-#nome {
-    /* background: rgb(17, 202, 202); */
-    text-align: center;
-}
 
 #nome > h3{
     font-weight: bold;
-    color: white;
 }
 
-#descricao {
-    text-align: center;
+
+
+#habilidades {
+    /* background: rgb(17, 202, 202); */
+    padding-top: 5px; 
 }
 
-#descricao > p {
-    color: white;
+#habilidades > ul {
+     list-style-type: none; 
+     margin-left:-40px;
+    
+}
+
+#habilidades > strong > a {
+    color: rgba(255, 255, 255, 0.671);
+    text-decoration: none;
 }
