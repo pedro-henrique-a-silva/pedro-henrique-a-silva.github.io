@@ -1,5 +1,5 @@
 body {
-    background-color: lavendergi;
+    background-color: #a3b18a;
 }
 
 header {
@@ -9,7 +9,7 @@ header {
 }
 
 #container {
-    background-color: rgb(11, 102, 23);
+    background-color: #3a5a40;
     width: 700px;
     height: 700px; 
     margin-left: auto;
@@ -29,8 +29,13 @@ header {
 }
 
 
-h3{
+h3, h2{
     font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+#descricao {
+    font-family: monospace;
 }
 
 
@@ -45,7 +50,7 @@ ul {
 }
 
 a {
-    color: rgba(255, 255, 255, 0.671);
+    color: #dad7cd;
     text-decoration: none;
 }
 
