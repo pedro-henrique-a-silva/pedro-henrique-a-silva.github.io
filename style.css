@@ -10,7 +10,7 @@ header {
 
 #container {
     background-color: #3a5a40;
-    width: 700px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto; 
     padding-bottom: 15px;
@@ -19,12 +19,28 @@ header {
     color: white;
 }
 
+#info-pessoal {
+    height: 250;
+    padding: 20px 20px;
+}
+
+
+#perfil {
+    display: inline-block;
+    width: 200px;
+    /* text-align: center; */
+   
+}
 
 #perfil > img {
-    margin-top: -50px; 
     border-radius: 50%;
     width: 150px;
-    height: 150px;
+}
+
+#descricao {
+    font-family: monospace;
+    display: inline-block;
+    width: 556px;
 
 }
 
@@ -32,10 +48,6 @@ header {
 h3, h2{
     font-weight: bold;
     font-family: Verdana, Tahoma, sans-serif;
-}
-
-#descricao {
-    font-family: monospace;
 }
 
 
