@@ -52,10 +52,6 @@ body {
 
 /* Encerra o parte de perfil e apresentação */
 
-h3, h2{
-    font-weight: bold;
-    font-family: Verdana, Tahoma, sans-serif;
-}
 
 .knowledges, .links-list {
     text-align: center;
@@ -63,9 +59,27 @@ h3, h2{
 }
 
 
-.item1, .item2, .item3, .item4, .item5 {
+.item {
     font-size: 17px;
 }
+
+
+.not-active {
+    pointer-events: none;
+    text-decoration: line-through;
+    cursor: default;
+}
+
+
+h3, h2{
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+h3, h4{
+    margin: 20px 0 ;
+}
+
 
 ul {
      list-style-type: none; 
@@ -81,13 +95,12 @@ a {
     text-decoration: none;
 }
 
-
-
-.not-active {
-    pointer-events: none;
-    text-decoration: line-through;
-    cursor: default;
+hr {
+    margin: 10px auto;
 }
+
+
+
 
 
 
