@@ -1,24 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #a3b18a;
 }
 
 #container {
     background-color: #3a5a40;
-    width: 700px;
-    margin: 100px auto;
+    width: 800px;
+    margin: 0 auto;
+
     padding-bottom: 15px;
     border-radius: 10%;
-    text-align: center;
+    /* text-align: center; */
     color: white;
 }
 
+.information {
+    height: 250;
+    padding-top: 50px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
 
-#perfil > img {
-    margin-top: -50px; 
+
+.information-photo {
+    display: inline-block;
+    width: 200px;
+    /* border: 1px solid blue; */
+   
+}
+
+.information-photo img {
     border-radius: 50%;
     width: 150px;
-    height: 150px;
+}
 
+.information-text h2 {
+    margin-bottom: 10px;
+}
+
+.information-text {
+    /* border: 1px solid yellow; */
+    font-family: monospace;
+    display: inline-block;
+    width: 570px;
+}
+
+/* Encerra o parte de perfil e apresentação */
+
+
+.knowledges, .links-list {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.item {
+    font-size: 17px;
+}
+
+
+.not-active {
+    pointer-events: none;
+    text-decoration: line-through;
+    cursor: default;
 }
 
 
@@ -27,25 +75,14 @@ h3, h2{
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-#descricao {
-    font-family: monospace;
-    max-width: 80%;
-    margin: auto;
+h3, h4{
+    margin: 20px 0 ;
 }
 
-
-#habilidades {
-    /* background: rgb(17, 202, 202); */
-    margin-top: 55px; 
-}
-
-.item1, .item2, .item3, .item4, .item5 {
-    font-size: 17px;
-}
 
 ul {
      list-style-type: none; 
-     margin-left:-40px;   
+    
 }
 
 li {
@@ -57,15 +94,12 @@ a {
     text-decoration: none;
 }
 
-#indice {
-    margin-top: 50px; 
+hr {
+    margin: 10px auto;
 }
 
-.not-active {
-    pointer-events: none;
-    text-decoration: line-through;
-    cursor: default;
-}
+
+
 
 
 
