@@ -7,14 +7,13 @@ body {
     background-color: #a3b18a;
 }
 
-#container {
+.container {
     background-color: #3a5a40;
     width: 800px;
     margin: 0 auto;
-
     padding-bottom: 15px;
     border-radius: 10%;
-    /* text-align: center; */
+    text-align: center;
     color: white;
 }
 
@@ -25,13 +24,6 @@ body {
     /* border: 1px solid red; */
 }
 
-
-.information-photo {
-    display: inline-block;
-    width: 200px;
-    /* border: 1px solid blue; */
-   
-}
 
 .information-photo img {
     border-radius: 50%;
