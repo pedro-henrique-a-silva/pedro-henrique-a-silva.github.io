@@ -54,7 +54,6 @@ ul, ol, li {
     margin-top: 50px;
 }
 
-
 .item {
     font-size: 17px;
 }
@@ -68,10 +67,11 @@ ul, ol, li {
     margin: 20px 0 ;
 }
 
+
+/* Configuração dos links */
 .sections-link {
     margin: 5px 0;
 }
-
 
 .links {
     display: inline-block;
@@ -93,6 +93,10 @@ ul, ol, li {
     text-decoration: none;
 }
 
+/* Configuração dos links */
+
+
+/* Configuração dos separadores hr e do pipe */
 .separator {
     margin: 10px auto;
     width: 150px;
@@ -101,6 +105,8 @@ ul, ol, li {
 .pipe-separator {
     margin: 0 5px;
 }
+
+/* Configuração dos separadores hr e do pipe */
 
 
 
