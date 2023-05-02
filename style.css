@@ -7,6 +7,11 @@ body {
     background-color: #a3b18a;
 }
 
+ul, ol, li {
+    list-style-type: none; 
+   
+}
+
 .container {
     background-color: #3a5a40;
     width: 800px;
@@ -25,12 +30,12 @@ body {
 }
 
 
-.information-photo img {
+.photo-profile {
     border-radius: 50%;
     width: 150px;
 }
 
-.information-text h2 {
+.title {
     margin-bottom: 10px;
 }
 
@@ -44,7 +49,7 @@ body {
 /* Encerra o parte de perfil e apresentação */
 
 
-.knowledges, .links-list {
+.knowledges, .links-social-midias {
     text-align: center;
     margin-top: 50px;
 }
@@ -54,40 +59,47 @@ body {
     font-size: 17px;
 }
 
+.font-titles {
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+}
 
-.not-active {
+.subtitle {
+    margin: 20px 0 ;
+}
+
+.sections-link {
+    margin: 5px 0;
+}
+
+
+.links {
+    display: inline-block;
+    color: #dad7cd;
+    transition: transform 200ms linear;
+}
+
+.links:hover {
+    transform: scale(1.08);
+}
+
+.link-not-active {
     pointer-events: none;
     text-decoration: line-through;
     cursor: default;
 }
 
-
-h3, h2{
-    font-weight: bold;
-    font-family: Verdana, Tahoma, sans-serif;
-}
-
-h3, h4{
-    margin: 20px 0 ;
-}
-
-
-ul {
-     list-style-type: none; 
-    
-}
-
-li {
-    margin: 5px 0;
-}
-
-a {
-    color: #dad7cd;
+.link-active {
     text-decoration: none;
 }
 
-hr {
+.separator {
     margin: 10px auto;
+    width: 150px;
+}
+
+.pipe-separator {
+    margin: 0 5px;
 }
 
 
