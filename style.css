@@ -9,6 +9,38 @@ body {
 }
 
 .header {
-  height: 20px;
+  /* height: 20px; */
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
   border: 1px solid white;
+}
+
+.menu-header {
+  width: 45%;
+  border: 1px solid red;
+  font-size: 18px;
+}
+
+.menu-header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-links {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  opacity: 0.8;
+  color: #FFFFFF;
+  transition: opacity 20ms ease-in;
+}
+
+.nav-links a:hover {
+  opacity: 1;
 }
