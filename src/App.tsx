@@ -4,6 +4,7 @@ import dark from './styles/theme/dark';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Separator from './components/Separator/Separator';
+import SkillsSections from './components/SkillsSection/SkillsSections';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <main>
         <About />
         <Separator>Front-End Skills</Separator>
+        <SkillsSections />
       </main>
     </ThemeProvider>
 
