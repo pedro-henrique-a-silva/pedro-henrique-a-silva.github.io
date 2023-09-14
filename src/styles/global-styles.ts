@@ -47,6 +47,10 @@ body {
   color: #FFFFFF;
 }
 
+main {
+  margin-top: 70px;
+}
+
 ol, ul {
   list-style: none;
 }
