@@ -42,7 +42,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-color: #333333;
+  background-color: ${({ theme }) => theme.colors.background};
   font-family: 'Poppins', sans-serif;
   color: #FFFFFF;
 }

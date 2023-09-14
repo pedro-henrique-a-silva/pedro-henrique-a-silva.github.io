@@ -1,4 +1,5 @@
 import { SkillDescription } from './style'
+
 type SkillProps = {
   children: React.ReactNode,
   title: string,

@@ -16,12 +16,21 @@ export const HeaderWrapper = styled.header`
 export const MenuWrapper = styled.nav`
   font-size: 18px;
 
+  @media screen and (min-width: 769px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  
+  }
+
   & ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 20px;
- }
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+   }
 
  & a {
   text-decoration: none;
@@ -31,6 +40,8 @@ export const MenuWrapper = styled.nav`
   -webkit-text-stroke-color: rgba(#FFFFFF, 0.5);
   opacity: 0.5;
   position: relative;
+  font-size: 0.7rem;
+  
   &::before {
     content: "";
     height: 1px;
@@ -48,8 +59,11 @@ export const MenuWrapper = styled.nav`
     }
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.1);
-  }
- }
+  } 
+}
+`
 
-  
+export const ToggleThemeButton = styled.button`
+  background-color: transparent;
+  border: none
 `
