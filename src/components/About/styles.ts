@@ -1,13 +1,38 @@
-import { styled } from 'styled-components';
+import styled,{keyframes} from 'styled-components';
+
+const fadeIn = keyframes`
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+
+  100% {
+    
+    opacity: 1;
+  }
+`;
 
 export const AboutWrapper = styled.section`
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 30px 5px;
   margin-bottom: 70px;
   gap: 30px;
+  animation: ${fadeIn} 1s ease;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
 `;
 
 export const ImgProfile = styled.div`
@@ -15,7 +40,7 @@ export const ImgProfile = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  min-width: 300px;
   height: 300px;
 
   &::before {
@@ -50,7 +75,8 @@ export const ImgProfile = styled.div`
   }
 
   & img {
-    width: 100%;
+    /* width: 100%; */
+    object-fit: cover;
     height: 300px;
     border-radius: 100%;
   }
@@ -60,9 +86,15 @@ export const AboutText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 300px;
   gap: 10px;
 
   & p:nth-of-type(2) {
     text-align: center;
+
+  }
+
+  @media (min-width: 769px) {
+    max-width: 700px;
   }
 `

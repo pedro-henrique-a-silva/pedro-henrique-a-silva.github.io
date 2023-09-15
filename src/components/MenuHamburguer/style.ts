@@ -59,11 +59,11 @@ export const MenuPopup = styled.nav<MenuPopupProps>`
     list-style: none;
     gap: 1px;
     flex-direction: column;
-    background-color: #252525;
+    background-color: ${({ theme }) => theme.colors.primary};
    }
 
   & ul li {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.white};
     padding: 10px 2px;
   }
 

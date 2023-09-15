@@ -9,9 +9,11 @@ export default {
     gray800: "#282824",
     gray900: "#121214",
 
-    primary: '#8458E6',
+    primaryText: '#fff',
+
+    primary: '#252525',
+    // primary: '#8458E6',
     secondary: '#633BBC',
-    tertiary: '#8257E5',
 
     background: '#333333',
 

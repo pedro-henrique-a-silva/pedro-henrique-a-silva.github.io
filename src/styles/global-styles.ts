@@ -44,7 +44,8 @@ body {
   line-height: 1;
   background-color: ${({ theme }) => theme.colors.background};
   font-family: 'Poppins', sans-serif;
-  color: #FFFFFF;
+  color: ${({ theme }) => theme.colors.primaryText};
+  transition: all 300ms ease;
 }
 
 main {

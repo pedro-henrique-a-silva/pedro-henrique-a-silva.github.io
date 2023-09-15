@@ -19,11 +19,12 @@ function Header() {
           {
             (theme === 'dark') 
             ? <SunDim size={24} color="#f5f0f0" weight="fill" />
-            : <Moon size={24} color="#bd6161" weight="fill" />
+            : <Moon size={24} color="#fff" weight="fill" />
           }
         </ToggleThemeButton>
-        <MenuHamburguer />
 
+        <MenuHamburguer />
+        
         <MenuWrapper>
           <ul>
             <li>

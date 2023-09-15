@@ -7,10 +7,16 @@ export const HeaderWrapper = styled.header`
   height: 70px;
   justify-content: space-between;
   align-items: center;
-  color: #FFFFFF;
-  /* border: 1px solid white; */
-  background-color: #252525;
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.primary};
   z-index: 10;
+  transition: all 300ms ease;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 `
 
 export const MenuWrapper = styled.nav`
@@ -35,12 +41,11 @@ export const MenuWrapper = styled.nav`
  & a {
   text-decoration: none;
   opacity: 0.8;
-  color: #FFFFFF;
+  color: ${({ theme }) => theme.colors.white};
   transition: opacity 20ms ease-in;
   -webkit-text-stroke-color: rgba(#FFFFFF, 0.5);
-  opacity: 0.5;
   position: relative;
-  font-size: 0.7rem;
+  font-size: 1rem;
   
   &::before {
     content: "";
