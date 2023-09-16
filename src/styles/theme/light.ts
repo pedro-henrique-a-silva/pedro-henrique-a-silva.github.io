@@ -16,6 +16,6 @@ export default {
     secondary: '#252525',
 
     background: '#e1e1e1',
-    borderColor: '#383a4f',
+    borderColor: '#252525',
   },
 };

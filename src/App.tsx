@@ -8,7 +8,7 @@ import Header from './components/Header/Header';
 import About from './components/About/About';
 import Separator from './components/Separator/Separator';
 import SkillsSections from './components/SkillsSection/SkillsSections';
-// import Carousel from './components/Carousel/Carousel';
+import Carousel from './components/Carousel/Carousel';
 
 
 function App() {
@@ -21,7 +21,8 @@ function App() {
         <About />
         <Separator>Front-End Skills</Separator>
         <SkillsSections />
-        {/* <Carousel /> */}
+        <Separator>Projetos</Separator>
+        <Carousel />
       </main>
     </ThemeProvider>
 

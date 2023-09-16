@@ -17,6 +17,6 @@ export default {
 
     background: '#333333',
 
-    borderColor: '#383a4f',
+    borderColor: '#633BBC',
   },
 };
