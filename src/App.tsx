@@ -19,7 +19,7 @@ function App() {
       <Header/>
       <main>
         <About />
-        <Separator>Front-End Skills</Separator>
+        <Separator id='front-end'>Front-End Skills</Separator>
         <SkillsSections />
         <Separator>Projetos</Separator>
         <Carousel />

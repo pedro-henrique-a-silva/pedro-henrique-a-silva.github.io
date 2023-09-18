@@ -17,7 +17,8 @@ export default {
 
     background: '#e1e1e1',
 
-    cardBackground: '#bfbcbc',
+    cardBackground: '#fff',
+
     arrowBackground: '#252525',
 
     borderColor: '#252525',

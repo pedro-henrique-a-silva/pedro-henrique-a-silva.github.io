@@ -7,17 +7,21 @@ function SkillsSections() {
     <SkillsWrapper>
       <article>
         <Skill title='HTML & CSS'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae culpa aliquid modi consequatur praesentium hic autem maiores natus, et repellat provident dolorem earum, facilis omnis explicabo tenetur facere. Eius.
+        A combinação de HTML semântico e CSS bem estruturado me deu a capacidade de criar sites que não apenas funcionam bem, mas também proporcionam uma ótima experiência ao usuário.
         </Skill>
         <Skill title='Javascript'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae culpa aliquid modi consequatur praesentium hic autem maiores natus, et repellat provident dolorem earum, facilis omnis explicabo tenetur facere. Eius.
+        As minhas habilidades em JavaScript vão além de simplesmente escrever código; elas incluem uma profunda compreensão da lógica, do JavaScript assíncrono, da programação funcional, da manipulação do DOM (Document Object Model) e da gestão de eventos.
+        </Skill>
+        <Skill title='React'>
+          Minhas habilidades em React representam um domínio sólido dessa biblioteca JavaScript essencial para o desenvolvimento de interfaces de usuário modernas. Minha experiência abrange uma ampla gama de tópicos, desde a criação de componentes funcionais e de classe até o gerenciamento de estado, a utilização de diversos hooks nativos e a criação de hooks personalizados.
         </Skill>
       </article>
 
       <section >
         <SkillBar skillName='HTML' skillPercent={100}/>
-        <SkillBar skillName='Javascript' skillPercent={80}/>
         <SkillBar skillName='CSS' skillPercent={90}/>
+        <SkillBar skillName='Javascript' skillPercent={80}/>
+        <SkillBar skillName='React' skillPercent={80}/>
       </section>
     </SkillsWrapper>
   )

@@ -71,5 +71,6 @@ export const MenuWrapper = styled.nav`
 
 export const ToggleThemeButton = styled.button`
   background-color: transparent;
-  border: none
+  border: none;
+  cursor: pointer;
 `

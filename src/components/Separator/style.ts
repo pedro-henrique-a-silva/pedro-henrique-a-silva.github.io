@@ -28,5 +28,6 @@ export const SeparatorWrapper = styled.section`
   & h1 {
     margin-left: 30px;
     line-height: 100px;
+    font-size: 2rem;
   }
 `

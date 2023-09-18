@@ -31,7 +31,7 @@ function Header() {
               <a href="#">Home</a>  
             </li>
             <li>
-              <a href="#">Front-End</a> 
+              <a href="#front-end">Front-End</a> 
             </li>
             <li>
               <a href="#">Back-End</a>  

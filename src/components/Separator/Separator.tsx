@@ -2,12 +2,13 @@ import { SeparatorWrapper } from './style';
 
 type SeparatorProps = {
   children: React.ReactNode
+  id?: string
 }
 
 function Separator(props: SeparatorProps) {
-  const { children } = props;
+  const { children, id } = props;
   return (
-    <SeparatorWrapper>
+    <SeparatorWrapper id={id}>
       <h1> {children}</h1>
     </SeparatorWrapper>
   )

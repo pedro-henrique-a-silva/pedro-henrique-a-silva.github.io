@@ -63,6 +63,7 @@ export const CarouselContainer = styled.ul`
   min-width: 270px;
   align-items: center;
   scroll-behavior: smooth;
+  padding: 1rem 0;
   position: relative;
   gap: 20px;
 
@@ -75,18 +76,22 @@ export const CarouselContainer = styled.ul`
 export const Card = styled.li`
   position: relative;
   padding: 10px;
-  height: 300px;
+  height: 360px;
   background-color: ${({ theme }) => theme.colors.cardBackground};
   text-align: center;
   border-radius: 10px;
   flex: none;
+  cursor: pointer;
 
   & h3 {
     margin-bottom: 0.5rem;
   }
 
   & p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    width: 251px;
+    font-size: 0.75rem;
+    text-align: justify;
   }
 
   & img {
