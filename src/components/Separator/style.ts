@@ -18,7 +18,7 @@ export const SeparatorWrapper = styled.section`
   background-color: ${({ theme }) => theme.colors.primary};
   /* box-shadow: 1px 1px 6px 0px #e81cff; */
   box-shadow: 1px 1px 6px 0px ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.gray100};
   min-width: 370px;
   width: 100%;
   transition: all 300ms ease;

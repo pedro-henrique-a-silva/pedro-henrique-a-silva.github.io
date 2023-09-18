@@ -5,7 +5,7 @@ export default [
     projectDescription: 'Nesse projeto foi desenvolvido um gerenciador de senhas, com a possibilidade de adicionar, remover e editar senhas, fazendo a validação das senhas antes que podessem ser salvas.',
     projectImage: 'password-manager.png',
     projectUrl: 'https://pedro-henrique-a-silva.github.io/password-manager/',
-    tags: ['React', 'TypeScript', 'React Hooks' , 'LocalStorage, Flexbox']
+    tags: ['React', 'TypeScript', 'React Hooks' , 'LocalStorage', 'Flexbox']
   },
   {
     id: 2,

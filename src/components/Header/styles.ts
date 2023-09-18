@@ -82,20 +82,21 @@ export const Logo = styled.div`
   align-items: center;
   width: 60px;
   height: 60px;
-  border: 4px solid #fff;
+  border: 4px solid ${({ theme }) => theme.colors.gray100};
+;
   border-radius: 50%;
 
   & > div {
     position: relative;
     width: 60%;
     height: 60%;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.colors.gray100};
     border-radius: 50%;
   }
 
   & > div div {
     position: absolute;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.colors.gray100};
     border-radius: 50%;
     width: 12px;
     height: 12px;

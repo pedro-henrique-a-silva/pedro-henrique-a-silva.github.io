@@ -78,13 +78,23 @@ export const Card = styled.li`
   padding: 10px;
   height: 420px;
   background-color: ${({ theme }) => theme.colors.cardBackground};
+  color: ${({ theme }) => theme.colors.gray100};
   text-align: center;
   border-radius: 10px;
   flex: none;
   cursor: pointer;
 
+  & a {
+    text-decoration: none;
+  }
+
+  & a:active { 
+    color: ${({ theme }) => theme.colors.gray100};
+  }
+
   & h3 {
     margin-bottom: 0.5rem;
+    color: ${({ theme }) => theme.colors.gray100};
   }
 
   & p {
@@ -92,6 +102,8 @@ export const Card = styled.li`
     width: 251px;
     font-size: 0.75rem;
     text-align: justify;
+    color: #fff;
+
   }
 
   & img {
