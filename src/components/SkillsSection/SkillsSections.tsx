@@ -15,6 +15,9 @@ function SkillsSections() {
         <Skill title='React'>
           Minhas habilidades em React representam um domínio sólido dessa biblioteca JavaScript essencial para o desenvolvimento de interfaces de usuário modernas. Minha experiência abrange uma ampla gama de tópicos, desde a criação de componentes funcionais e de classe até o gerenciamento de estado, a utilização de diversos hooks nativos e a criação de hooks personalizados.
         </Skill>
+        <Skill title='Styled-components, CSS-Modules'>
+          Minhas habilidades em desenvolvimento de estilos são uma parte fundamental do meu conjunto de habilidades como desenvolvedor. O que torna minha abordagem única é a capacidade de criar estilos robustos e dinâmicos usando técnicas avançadas, como CSS Modules e Styled-components.
+        </Skill>
       </article>
 
       <section >

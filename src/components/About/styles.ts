@@ -85,12 +85,25 @@ export const ImgProfile = styled.div`
 export const AboutText = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   min-width: 300px;
   gap: 10px;
 
+  & h1 {
+    font-size: 2rem;
+  }
+
+  & h2 {
+    font-size: 1.5rem;
+  }
+
+  & p:nth-of-type(1) {
+    font-size: 0.75rem;
+  }
+
   & p:nth-of-type(2) {
-    text-align: center;
+    line-height: 1.5;
+    font-size: 1rem;
 
   }
 

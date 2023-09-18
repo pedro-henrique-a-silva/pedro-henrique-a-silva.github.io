@@ -76,7 +76,7 @@ export const CarouselContainer = styled.ul`
 export const Card = styled.li`
   position: relative;
   padding: 10px;
-  height: 360px;
+  height: 420px;
   background-color: ${({ theme }) => theme.colors.cardBackground};
   text-align: center;
   border-radius: 10px;
