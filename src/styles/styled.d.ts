@@ -14,10 +14,12 @@ declare module 'styled-components' {
 
       primaryText: string,
       
-      primary:string,
-      secondary:string,
+      primary: string,
+      secondary: string,
 
-      background:string,
+      background: string,
+      cardBackground: string,
+      arrowBackground: string,
       borderColor: string,
     }
   }

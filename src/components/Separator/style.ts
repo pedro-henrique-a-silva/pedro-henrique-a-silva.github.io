@@ -19,7 +19,8 @@ export const SeparatorWrapper = styled.section`
   /* box-shadow: 1px 1px 6px 0px #e81cff; */
   box-shadow: 1px 1px 6px 0px ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.white};
-  width: 100vw;
+  min-width: 370px;
+  width: 100%;
   transition: all 300ms ease;
   animation: ${slideFromLeft} .5s ease;
 

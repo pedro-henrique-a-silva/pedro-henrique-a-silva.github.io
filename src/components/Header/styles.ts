@@ -9,6 +9,7 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.primary};
+  box-shadow: 1px 1px 6px 0px ${({ theme }) => theme.colors.secondary};
   z-index: 10;
   transition: all 300ms ease;
 

@@ -2,9 +2,10 @@ import { useRef } from 'react';
 import { 
   Card, 
   CarouselContainer, 
-  ArrowsWrapper, 
+  // ArrowsWrapper, 
   ImgContainer,
-  TagsContainer } from './style';
+  TagsContainer,
+  CarouselWrapper } from './style';
 import {ArrowCircleRight, ArrowCircleLeft } from '@phosphor-icons/react'
 import data from '../../data/data'
 
@@ -26,37 +27,39 @@ function Carousel() {
 
   return (
     <>
-    <CarouselContainer ref={carouselRef}>
-      {data.map((project) => (
-        <Card key={project.id}>
-          <ImgContainer>
-            <img src={project.projectImage} alt="img" />
-          </ImgContainer>
-          <h3>{project.projectName}</h3>
-          <p>{project.projectDescription}</p>
-          <TagsContainer>
-            {project.tags.map((tag) => (
-              <span key={tag}>{tag}</span>
-            ))}
-          </TagsContainer>
-        </Card>
-      ))}
-      
-    </CarouselContainer>
-    <ArrowsWrapper>
+    <CarouselWrapper>
+      <CarouselContainer ref={carouselRef}>
+        {data.map((project) => (
+          <Card key={project.id}>
+            <ImgContainer>
+              <img src={project.projectImage} alt="img" />
+            </ImgContainer>
+            <h3>{project.projectName}</h3>
+            <p>{project.projectDescription}</p>
+            <TagsContainer>
+              {project.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </TagsContainer>
+          </Card>
+        ))}
+        
+      </CarouselContainer>
+      {/* <ArrowsWrapper> */}
       <button
         type="button"
         onClick={ handleLeftArrow }
       >
-        <ArrowCircleLeft size={24} color="#ebe5e5" weight="fill" />
+        <ArrowCircleLeft size={40}  weight="fill" />
       </button>
       <button
         type='button'
         onClick={ handleRightArrow }
       >
-        <ArrowCircleRight size={24} color="#ebe5e5" weight="fill" />
+        <ArrowCircleRight size={40}  weight="fill" />
       </button>
-    </ArrowsWrapper>
+      {/* </ArrowsWrapper> */}
+    </CarouselWrapper>
     </>
   );
 }

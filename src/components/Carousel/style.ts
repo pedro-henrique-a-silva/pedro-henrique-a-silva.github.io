@@ -1,12 +1,67 @@
 import { styled } from 'styled-components';
 
+
+export const CarouselWrapper = styled.div`
+  width: fit-content;
+  min-width: 270px;
+  position: relative;
+  margin: 29px auto;
+
+  & button {
+    position: absolute;
+    background-color: transparent;
+    color: ${({ theme }) => theme.colors.arrowBackground};
+    border: none;
+    cursor: pointer;
+  }
+
+  & button:nth-of-type(1) {
+    left: -35px;
+    top: 50%;
+  }
+
+  & button:nth-of-type(2) {
+    right: -35px;
+    top: 50%;
+  }
+
+  @media (max-width: 699px) {
+    width: 270px;
+
+    & ul {
+      width: 270px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    width: 570px;
+
+    & ul {
+      width: 570px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    width: 860px;
+
+    & ul {
+      width: 860px;
+    }
+  }
+  @media (min-width: 1300px) {
+    width: 1140px;
+
+    & ul {
+      width: 1140px;
+    }
+  }
+`;
+
 export const CarouselContainer = styled.ul`
   display: flex;
   overflow: auto;
-  width: 270px;
-  /* justify-content: center; */
+  min-width: 270px;
   align-items: center;
-  margin: 29px auto;
   scroll-behavior: smooth;
   position: relative;
   gap: 20px;
@@ -15,14 +70,13 @@ export const CarouselContainer = styled.ul`
     display: none;
   }
 
- 
 `;
 
 export const Card = styled.li`
   position: relative;
   padding: 10px;
   height: 300px;
-  background-color: #252525;
+  background-color: ${({ theme }) => theme.colors.cardBackground};
   text-align: center;
   border-radius: 10px;
   flex: none;
@@ -38,27 +92,15 @@ export const Card = styled.li`
   & img {
     object-fit: cover;
     width: 200px;
+    width: 100%;
+    height: 100%;
   }
 `;
 
 export const ArrowsWrapper = styled.div`
   text-align: center;
   
-  & button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  & button:nth-of-type(1) {
-    left: 0;
-    top: 50%;
-  }
-
-  & button:nth-of-type(2) {
-    right: 0;
-    top: 50%;
-  }
+  
 `
 
 export const ImgContainer = styled.div`
@@ -67,6 +109,8 @@ export const ImgContainer = styled.div`
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 0.5rem;
+  height: 130px;
+  
 
   &:before{
     position: absolute;
