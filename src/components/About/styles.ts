@@ -111,3 +111,18 @@ export const AboutText = styled.div`
     max-width: 700px;
   }
 `
+
+export const SocialMedia = styled.div`
+  color: ${({ theme }) => theme.colors.primaryText};
+  transition: all 300ms ease;
+
+  & a {
+    color: ${({ theme }) => theme.colors.primaryText};
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  & a:active {
+    color: ${({ theme }) => theme.colors.primaryText};
+  }
+`

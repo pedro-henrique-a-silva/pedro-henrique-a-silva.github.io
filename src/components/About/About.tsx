@@ -1,4 +1,5 @@
-import { AboutWrapper, ImgProfile, AboutText } from './styles'
+import { GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
+import { AboutWrapper, ImgProfile, AboutText, SocialMedia } from './styles'
 
 function About() {
   return (
@@ -14,6 +15,14 @@ function About() {
             Sou um desenvolvedor Web FullStack, atualmente em transição de carreira.
             Buscando pela primeira oportunidade de mostras minhas habilidades e conhecimentos com desenvolvedor.
           </p>
+          <SocialMedia>
+            <a href="https://github.com/pedro-henrique-a-silva" target="_blank">
+              <GithubLogo size={28} weight="fill" />
+            </a>
+            <a href="https://www.linkedin.com/in/pedro-henrique-a-silva/" target="_blank">
+              <LinkedinLogo size={28} weight="fill" />
+            </a>
+          </SocialMedia>
         </AboutText>
       </AboutWrapper>
   )

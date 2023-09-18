@@ -8,8 +8,8 @@ export const SkillDescription = styled.div`
   }
 
   & p {
-    font-size: 0.75rem;
     line-height: 1.5;
+    font-size: 0.75rem;
     text-align: justify;
   }
 `

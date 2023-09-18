@@ -63,7 +63,7 @@ export const CarouselContainer = styled.ul`
   min-width: 270px;
   align-items: center;
   scroll-behavior: smooth;
-  padding: 1rem 0;
+  padding: 1rem;
   position: relative;
   gap: 20px;
 
@@ -78,31 +78,37 @@ export const Card = styled.li`
   padding: 10px;
   height: 420px;
   background-color: ${({ theme }) => theme.colors.cardBackground};
-  color: ${({ theme }) => theme.colors.gray100};
+  color: ${({ theme }) => theme.colors.primaryText};
   text-align: center;
   border-radius: 10px;
   flex: none;
   cursor: pointer;
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   & a {
     text-decoration: none;
   }
 
   & a:active { 
-    color: ${({ theme }) => theme.colors.gray100};
+    color: ${({ theme }) => theme.colors.primaryText};
   }
 
   & h3 {
     margin-bottom: 0.5rem;
-    color: ${({ theme }) => theme.colors.gray100};
+    color: ${({ theme }) => theme.colors.primaryText};
   }
 
   & p {
     margin-bottom: 1rem;
     width: 251px;
+    line-height: 1.5;
     font-size: 0.75rem;
     text-align: justify;
-    color: #fff;
+    color: ${({ theme }) => theme.colors.primaryText};
 
   }
 

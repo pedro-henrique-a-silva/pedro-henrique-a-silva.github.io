@@ -18,13 +18,17 @@ function SkillsSections() {
         <Skill title='Styled-components, CSS-Modules'>
           Minhas habilidades em desenvolvimento de estilos são uma parte fundamental do meu conjunto de habilidades como desenvolvedor. O que torna minha abordagem única é a capacidade de criar estilos robustos e dinâmicos usando técnicas avançadas, como CSS Modules e Styled-components.
         </Skill>
+        <Skill title='Jest, React Testing Library'>
+        Minhas habilidades com testes usando Jest e RTL (React Testing Library) são uma parte essencial da minha jornada como desenvolvedor. Com essas ferramentas poderosas, sou capaz de criar aplicações mais robustas e confiáveis, garantindo que o código funcione como esperado em todas as circunstâncias.
+        </Skill>
       </article>
 
       <section >
         <SkillBar skillName='HTML' skillPercent={100}/>
-        <SkillBar skillName='CSS' skillPercent={90}/>
+        <SkillBar skillName='CSS' skillPercent={80}/>
         <SkillBar skillName='Javascript' skillPercent={80}/>
-        <SkillBar skillName='React' skillPercent={80}/>
+        <SkillBar skillName='React' skillPercent={75}/>
+        <SkillBar skillName='Testes' skillPercent={70}/>
       </section>
     </SkillsWrapper>
   )
