@@ -134,13 +134,13 @@ export const TagsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 240px;
-  gap: 0.5rem;
+  gap: 0.3rem;
 
   & span {
     padding: 0.25rem 0.5rem;
     border: 1px solid ${({ theme }) => theme.colors.borderColor};
     color: ${({ theme }) => theme.colors.borderColor};
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     border-radius: 10px;
   }
 `
