@@ -4,7 +4,8 @@ export const HeaderWrapper = styled.header`
   display: flex;
   padding: 10px;
   width: 100%;
-  height: 70px;
+  /* height: 70px; */
+  padding: 1rem 0.5rem;
   justify-content: space-between;
   align-items: center;
   color: ${({ theme }) => theme.colors.white};
@@ -74,3 +75,58 @@ export const ToggleThemeButton = styled.button`
   border: none;
   cursor: pointer;
 `
+
+export const Logo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+
+  & > div {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  & > div div {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 4px solid ${({ theme }) => theme.colors.primary};
+    transition: all 300ms ease;
+
+  }
+
+  & > div div:nth-of-type(1) {
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  & > div div:nth-of-type(2) {
+    top: 50%;
+    left: -8px;
+    transform: translateY(-50%);
+  }
+
+  & > div div:nth-of-type(3) {
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+    
+  }
+
+  & > div div:nth-of-type(4) {
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+`;

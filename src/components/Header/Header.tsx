@@ -5,13 +5,21 @@ import MenuHamburguer from '../MenuHamburguer/MenuHamburguer';
 import { 
   HeaderWrapper, 
   MenuWrapper,
-  ToggleThemeButton } from './styles';
+  ToggleThemeButton,
+  Logo } from './styles';
 
 function Header() {
   const { theme, updateTheme } = useContext(ThemeContext)
   return (
     <HeaderWrapper>
-      <h1>Logo</h1>
+      <Logo>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </Logo>
       <div>
         <ToggleThemeButton
           onClick={() => updateTheme(theme === 'dark' ? 'light' : 'dark')}
