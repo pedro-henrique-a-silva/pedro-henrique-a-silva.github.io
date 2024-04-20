@@ -1,15 +1,15 @@
-import { useContext } from 'react';
-import ThemeContext from '../../context/context-theme';
-import { Moon, SunDim } from '@phosphor-icons/react';
+// import { useContext } from 'react';
+// import ThemeContext from '../../context/context-theme';
+// import { Moon, SunDim } from '@phosphor-icons/react';
 import MenuHamburguer from '../MenuHamburguer/MenuHamburguer';
 import { 
   HeaderWrapper, 
   MenuWrapper,
-  ToggleThemeButton,
+  // ToggleThemeButton,
   Logo } from './styles';
 
 function Header() {
-  const { theme, updateTheme } = useContext(ThemeContext)
+  // const { theme, updateTheme } = useContext(ThemeContext)
   return (
     <HeaderWrapper>
       <Logo>
@@ -21,7 +21,7 @@ function Header() {
         </div>
       </Logo>
       <div>
-        <ToggleThemeButton
+        {/* <ToggleThemeButton
           onClick={() => updateTheme(theme === 'dark' ? 'light' : 'dark')}
         >
           {
@@ -29,7 +29,7 @@ function Header() {
             ? <SunDim size={24} color="#f5f0f0" weight="fill" />
             : <Moon size={24} color="#fff" weight="fill" />
           }
-        </ToggleThemeButton>
+        </ToggleThemeButton> */}
 
         <MenuHamburguer />
         

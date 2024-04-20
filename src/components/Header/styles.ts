@@ -4,8 +4,8 @@ export const HeaderWrapper = styled.header`
   display: flex;
   padding: 10px;
   width: 100%;
-  /* height: 70px; */
-  padding: 1rem 0.5rem;
+  min-width: 390px;
+  padding: 1rem 4rem;
   justify-content: space-between;
   align-items: center;
   color: ${({ theme }) => theme.colors.white};
