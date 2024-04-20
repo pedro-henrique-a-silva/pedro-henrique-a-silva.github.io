@@ -57,26 +57,26 @@ export default [
   },
   {
     id: 8,
-    projectName: 'My Wallet',
-    projectDescription: 'Esse projeto é uma aplicação de gerenciamento de gastos, que já faz a conversão de várias moedas para o Real Brasileiro, e também é possível ver o saldo atual.',
-    projectImage: 'my-wallet.png',
-    projectUrl: 'https://pedro-henrique-a-silva.github.io/my-wallet',
-    tags: ['React', 'TypeScript', 'React Hooks' , 'Fetch', 'Styled-Components', 'CSS']
+    projectName: 'Backend App Receitas',
+    projectDescription: 'Essa é a implementação de uma aplicação fullstack de receitas, com duas versões de backend utilizando Express e NestJS, respectivamente. O projeto também inclui uma aplicação frontend que consome os serviços dos backends para exibir receitas de comidas e bebidas',
+    projectImage: 'backend-app-receitas.png',
+    projectUrl: 'https://github.com/pedro-henrique-a-silva/receitas-fullstack',
+    tags: ['Express', 'Nest', 'Typescript', 'Sequelize' , 'Prisma', 'POO', 'SOLID']
   },
   {
     id: 9,
-    projectName: 'My Wallet',
-    projectDescription: 'Esse projeto é uma aplicação de gerenciamento de gastos, que já faz a conversão de várias moedas para o Real Brasileiro, e também é possível ver o saldo atual.',
-    projectImage: 'my-wallet.png',
-    projectUrl: 'https://pedro-henrique-a-silva.github.io/my-wallet',
-    tags: ['React', 'TypeScript', 'React Hooks' , 'Fetch', 'Styled-Components', 'CSS']
+    projectName: 'Api de Futebol',
+    projectDescription: 'A aplicação backend para gerenciar dados de um campeonato de futebol. Com ela, é possível finalizar partidas, registrar resultados e atualizar o leaderboard automaticamente. Implementado usando POO e SOLID para ter uma estrutura robusta e eficiente, garantindo a confiabilidade e a escalabilidade do sistema.',
+    projectImage: 'backend-api-futebol.png',
+    projectUrl: 'https://github.com/pedro-henrique-a-silva/futbol-api',
+    tags: ['Express', 'TypeScript', 'Sequelize' , 'POO', 'SOLID', 'ORM']
   },
   {
     id: 10,
-    projectName: 'My Wallet',
-    projectDescription: 'Esse projeto é uma aplicação de gerenciamento de gastos, que já faz a conversão de várias moedas para o Real Brasileiro, e também é possível ver o saldo atual.',
-    projectImage: 'my-wallet.png',
-    projectUrl: 'https://pedro-henrique-a-silva.github.io/my-wallet',
-    tags: ['React', 'TypeScript', 'React Hooks' , 'Fetch', 'Styled-Components', 'CSS']
+    projectName: 'Manager Store',
+    projectDescription: 'A API é um sistema de gerenciamento de vendas em que será possível criar, visualizar, deletar e atualizar produtos e vendas. Você deverá utilizar o banco de dados MySQL para a gestão de dados.',
+    projectImage: 'backend-manager-store.png',
+    projectUrl: 'https://github.com/pedro-henrique-a-silva/manager-store',
+    tags: ['Express', 'Javascript', 'SQL' , 'Arquitetura em camadas']
   },
 ]
