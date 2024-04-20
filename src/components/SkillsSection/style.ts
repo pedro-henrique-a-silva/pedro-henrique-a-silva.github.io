@@ -20,7 +20,8 @@ export const SkillsWrapper = styled.section`
   display: flex;
   justify-content: space-between;
   width: 85%;
-  margin: 70px auto;  
+  margin: 70px auto;
+  min-width: 390px;
   animation: ${fadeIn} 1s ease;
 
   & article { 
