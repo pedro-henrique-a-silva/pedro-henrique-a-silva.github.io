@@ -20,7 +20,7 @@ export const Card = styled.li`
   position: relative;
   padding: 10px;
   min-width: 269px;
-  /* height: 420px; */
+  height: 420px;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.primaryText};
   text-align: center;
@@ -37,6 +37,7 @@ export const Card = styled.li`
 
   & a {
     text-decoration: none;
+    cursor: grab;
   }
 
   & a:active { 
