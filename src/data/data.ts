@@ -55,4 +55,28 @@ export default [
     projectUrl: 'https://pedro-henrique-a-silva.github.io/my-wallet',
     tags: ['React', 'TypeScript', 'React Hooks' , 'Fetch', 'Styled-Components', 'CSS']
   },
+  {
+    id: 8,
+    projectName: 'My Wallet',
+    projectDescription: 'Esse projeto é uma aplicação de gerenciamento de gastos, que já faz a conversão de várias moedas para o Real Brasileiro, e também é possível ver o saldo atual.',
+    projectImage: 'my-wallet.png',
+    projectUrl: 'https://pedro-henrique-a-silva.github.io/my-wallet',
+    tags: ['React', 'TypeScript', 'React Hooks' , 'Fetch', 'Styled-Components', 'CSS']
+  },
+  {
+    id: 9,
+    projectName: 'My Wallet',
+    projectDescription: 'Esse projeto é uma aplicação de gerenciamento de gastos, que já faz a conversão de várias moedas para o Real Brasileiro, e também é possível ver o saldo atual.',
+    projectImage: 'my-wallet.png',
+    projectUrl: 'https://pedro-henrique-a-silva.github.io/my-wallet',
+    tags: ['React', 'TypeScript', 'React Hooks' , 'Fetch', 'Styled-Components', 'CSS']
+  },
+  {
+    id: 10,
+    projectName: 'My Wallet',
+    projectDescription: 'Esse projeto é uma aplicação de gerenciamento de gastos, que já faz a conversão de várias moedas para o Real Brasileiro, e também é possível ver o saldo atual.',
+    projectImage: 'my-wallet.png',
+    projectUrl: 'https://pedro-henrique-a-silva.github.io/my-wallet',
+    tags: ['React', 'TypeScript', 'React Hooks' , 'Fetch', 'Styled-Components', 'CSS']
+  },
 ]
