@@ -2,43 +2,38 @@ import { styled } from 'styled-components';
 
 
 export const CarouselWrapper = styled.div`
-  
+  padding: 0 50px;
   margin: 29px auto;
-`;
+  min-width: 390px;
 
-export const CarouselContainer = styled.ul`
-  display: flex;
-  overflow: auto;
-  min-width: 270px;
-  align-items: center;
-  scroll-behavior: smooth;
-  padding: 1rem;
-  position: relative;
-  gap: 20px;
-
-  &::-webkit-scrollbar {
-    display: none;
+  & div {
+    border-radius: 10px;
   }
 
+  & > section {
+    padding: 1rem 1rem;
+    overflow: none;
+  }
 `;
 
 export const Card = styled.li`
   position: relative;
   padding: 10px;
   min-width: 269px;
-  /* width: 269px; */
-  height: 420px;
-  background-color: ${({ theme }) => theme.colors.cardBackground};
+  /* height: 420px; */
+  background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.primaryText};
   text-align: center;
   border-radius: 10px;
+  box-shadow: 0px 0px 6px 0px ${({ theme }) => theme.colors.primary};
+  border: 2px solid ${({ theme }) => theme.colors.primary};
   flex: none;
-  cursor: pointer;
+  cursor: grab;
   transition: all 300ms ease;
 
-  &:hover {
-    transform: scale(1.1);
-  }
+  /* &:hover {
+    transform: scale(1.05);
+  } */
 
   & a {
     text-decoration: none;
@@ -70,11 +65,6 @@ export const Card = styled.li`
   }
 `;
 
-export const ArrowsWrapper = styled.div`
-  text-align: center;
-  
-  
-`
 
 export const ImgContainer = styled.div`
   /* width: 250px; */

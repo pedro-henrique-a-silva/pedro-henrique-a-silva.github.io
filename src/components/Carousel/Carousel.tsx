@@ -6,9 +6,6 @@ import {
 } from './style';
 import data from '../../data/data'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { register } from 'swiper/element/bundle';
-// register Swiper custom elements
-register();
 
 import { 
   EffectCoverflow,
@@ -35,26 +32,39 @@ function Carousel() {
           centeredSlides
           tag="section"
           loop={true}
-          spaceBetween={20}
-          effect= {'fade'}
-          fadeEffect= {{
-            crossFade: true
+          autoplay= {{
+            delay: 3000
           }}
-          breakpoints={ {
+          spaceBetween={10}
+          effect= {'coverflow'}
+          grabCursor= {true}
+          coverflowEffect= {{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true
+          }}
+          breakpoints= {{
             // when window width is >= 320px
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 40
+            568: {
+              slidesPerView: 2,
+              spaceBetween: 20
             },
+            // when window width is >= 480px
+            850: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            // when window width is >= 640px
             1100: {
               slidesPerView: 4,
-              spaceBetween: 50
-            },
-           
+              spaceBetween: 40
+            }
           }}
-          cardsEffect={{
-            slideShadows: true,
-          }}
+          // cardsEffect={{
+          //   slideShadows: true,
+          // }}
           navigation
           pagination={{ clickable: true }}
         >
