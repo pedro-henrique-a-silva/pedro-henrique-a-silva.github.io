@@ -19,14 +19,13 @@ export const SeparatorWrapper = styled.section`
   /* box-shadow: 1px 1px 6px 0px #e81cff; */
   box-shadow: 1px 1px 6px 0px ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.gray100};
-  min-width: 370px;
+  min-width: 390px;
   width: 100%;
   transition: all 300ms ease;
   animation: ${slideFromLeft} .5s ease;
-
+  padding: 0 4rem;
 
   & h1 {
-    margin-left: 30px;
     line-height: 100px;
     font-size: 2rem;
   }
