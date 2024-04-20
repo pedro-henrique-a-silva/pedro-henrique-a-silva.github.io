@@ -2,59 +2,8 @@ import { styled } from 'styled-components';
 
 
 export const CarouselWrapper = styled.div`
-  width: fit-content;
-  min-width: 270px;
-  position: relative;
+  
   margin: 29px auto;
-
-  & button {
-    position: absolute;
-    background-color: transparent;
-    color: ${({ theme }) => theme.colors.arrowBackground};
-    border: none;
-    cursor: pointer;
-  }
-
-  & button:nth-of-type(1) {
-    left: -35px;
-    top: 50%;
-  }
-
-  & button:nth-of-type(2) {
-    right: -35px;
-    top: 50%;
-  }
-
-  @media (max-width: 699px) {
-    width: 270px;
-
-    & ul {
-      width: 270px;
-    }
-  }
-
-  @media (min-width: 700px) {
-    width: 570px;
-
-    & ul {
-      width: 570px;
-    }
-  }
-
-  @media (min-width: 1000px) {
-    width: 860px;
-
-    & ul {
-      width: 860px;
-    }
-  }
-  @media (min-width: 1300px) {
-    width: 1140px;
-
-    & ul {
-      width: 1140px;
-    }
-  }
 `;
 
 export const CarouselContainer = styled.ul`
@@ -76,6 +25,8 @@ export const CarouselContainer = styled.ul`
 export const Card = styled.li`
   position: relative;
   padding: 10px;
+  min-width: 269px;
+  /* width: 269px; */
   height: 420px;
   background-color: ${({ theme }) => theme.colors.cardBackground};
   color: ${({ theme }) => theme.colors.primaryText};
@@ -104,9 +55,9 @@ export const Card = styled.li`
 
   & p {
     margin-bottom: 1rem;
-    width: 251px;
+    /* width: 251px; */
     line-height: 1.5;
-    font-size: 0.75rem;
+    font-size: 0.75em;
     text-align: justify;
     color: ${({ theme }) => theme.colors.primaryText};
 
@@ -114,7 +65,6 @@ export const Card = styled.li`
 
   & img {
     object-fit: cover;
-    width: 200px;
     width: 100%;
     height: 100%;
   }
@@ -127,7 +77,7 @@ export const ArrowsWrapper = styled.div`
 `
 
 export const ImgContainer = styled.div`
-  width: 250px;
+  /* width: 250px; */
   position: relative;
   border-radius: 10px;
   overflow: hidden;
