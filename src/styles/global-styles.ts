@@ -36,9 +36,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #333646;
   font-family: 'Poppins', sans-serif;
-  color: ${({ theme }) => theme.colors.primaryText};
   transition: all 300ms ease;
 }
 
