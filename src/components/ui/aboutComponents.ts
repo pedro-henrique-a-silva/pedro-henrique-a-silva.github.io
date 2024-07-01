@@ -121,7 +121,7 @@ export const AboutSocialMedia = styled.a<AboutSocialMediaProps>`
   &:hover {
     color: #ffffff;
     transform: rotate(0deg) skew(0deg) translate(0, -4px);
-    border: 1px solid ${props => props.socialColor};
-    background: ${props => props.socialColor};
+    border: 1px solid ${props => props.$socialColor};
+    background: ${props => props.$socialColor};
   }
 `;
