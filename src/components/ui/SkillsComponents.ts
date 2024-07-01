@@ -62,8 +62,8 @@ export const SkillsCard = styled.div<SkillsCardProps>`
   overflow: hidden;
   cursor: pointer;
   opacity: 0;
-  animation: ${({isVisible}) => isVisible && css`${skillCardFadeInRight} .5s ease-in-out forwards`};
-  animation-delay: ${({cardDelay}) => cardDelay}s;
+  animation: ${({$isVisible}) => $isVisible && css`${skillCardFadeInRight} .5s ease-in-out forwards`};
+  animation-delay: ${({$cardDelay}) => $cardDelay}s;
 
   &:hover svg {
     transform: scale(1.3) rotate(10deg);
