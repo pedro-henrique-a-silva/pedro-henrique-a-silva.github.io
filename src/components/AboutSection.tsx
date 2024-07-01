@@ -20,10 +20,11 @@ function About() {
       <ImgProfile src="foto.png"/>
       <AboutContentWrapper>
         <Paragraph>- Sobre mim</Paragraph>
-        <Title 
-          titleSize={1.5} 
-          titleWeight={400} 
-          titleColor="#E8E7E7">
+        <Title
+          $isVisible={true}
+          $titleSize={1.5} 
+          $titleWeight={400} 
+          $titleColor="#E8E7E7">
             FullStack Software Developer
         </Title>
         <Paragraph>Olá, meu nome é Pedro Silva, sou desenvolvedor front-end e designer de interfaces. 
@@ -32,10 +33,10 @@ function About() {
           Tenho experiência com HTML, CSS, JavaScript, React, TypeScript, Next.js, Styled-Components, Figma e Adobe XD.
         </Paragraph>
         <AboutSocialMediaWrapper>
-          <AboutSocialMedia socialColor="#0077B5">
+          <AboutSocialMedia $socialColor="#0077B5">
             <LinkedinLogo size={18}/>
           </AboutSocialMedia>
-          <AboutSocialMedia socialColor="#7232bd">
+          <AboutSocialMedia $socialColor="#7232bd">
             <GithubLogo size={18}/>
           </AboutSocialMedia>
         </AboutSocialMediaWrapper>
