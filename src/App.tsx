@@ -1,33 +1,25 @@
-// import {useContext} from 'react'
-// import ThemeContext from './context/context-theme';
+import { useState } from 'react'
+import About from './components/AboutSection'
+import HeaderSection from './components/HeaderSection'
+import ProjectsSection from './components/ProjectsSection'
+import SkillsSection from './components/SkillsSection'
+import { FoldWrapper } from './components/ui/foldWrapper'
+import data from './data/data'
 import GlobalStyles from './styles/global-styles'
-import { ThemeProvider } from 'styled-components';
-import dark from './styles/theme/dark';
-// import light from './styles/theme/light';
-import Header from './components/Header/Header';
-import About from './components/About/About';
-import Separator from './components/Separator/Separator';
-import SkillsSections from './components/SkillsSection/SkillsSections';
-import Carousel from './components/Carousel/Carousel';
-import frontendData from './data/frontend-data';
-import backendData from './data/backend-data';
+
 
 function App() {
-  // const { theme } = useContext(ThemeContext)
+  const [projects, setProjects] = useState(data)
   return (
-    <ThemeProvider theme={dark}>
+    <>
       <GlobalStyles />
-      <Header/>
-      <main>
-        <About />
-        <Separator id='back-end'>Back-End Skills</Separator>
-        <SkillsSections skills={backendData} />
-        <Separator id='front-end'>Front-End Skills</Separator>
-        <SkillsSections skills={frontendData} />
-        <Separator>Projetos</Separator>
-        <Carousel />
-      </main>
-    </ThemeProvider>
+      <HeaderSection/>
+      <About />
+      <FoldWrapper>
+        <SkillsSection/>
+      </FoldWrapper>
+      <ProjectsSection projects={projects} />
+    </>
 
   )
 }
