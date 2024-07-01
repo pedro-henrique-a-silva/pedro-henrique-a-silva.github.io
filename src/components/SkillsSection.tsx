@@ -37,38 +37,38 @@ function SkillsSection() {
 
   return (
     <SkillsWrapper ref={ref}>
-      <Title isVisible={isVisible} titleSize={1} titleWeight={200} titleColor="#FFC25C">
+      <Title $isVisible={isVisible} $titleSize={1} $titleWeight={200} $titleColor="#FFC25C">
         Habilidades
       </Title>
-      <Title isVisible={isVisible} titleSize={1.5} titleWeight={400} titleColor="#E8E7E7">
+      <Title $isVisible={isVisible} $titleSize={1.5} $titleWeight={400} $titleColor="#E8E7E7">
         No que sou bom
       </Title>
      
 
       {isVisible &&
       <>
-        <Title isVisible={isVisible} titleSize={1} titleWeight={100} titleColor="#FFC25C">
+        <Title $isVisible={isVisible} $titleSize={1} $titleWeight={100} $titleColor="#FFC25C">
         BackEnd
       </Title>
         <SkillsCardWrapper>
-          <SkillsCard isVisible={isVisible} cardDelay={0}> <ExpressLogo /> </SkillsCard>
-          <SkillsCard isVisible={isVisible} cardDelay={.2}> <JavaLogo /> </SkillsCard>
-          <SkillsCard isVisible={isVisible} cardDelay={.4}> <SpringLogo /> </SkillsCard>
-          <SkillsCard isVisible={isVisible} cardDelay={.6}> <SqlLogo /> </SkillsCard>
+          <SkillsCard $isVisible={isVisible} $cardDelay={0}> <ExpressLogo /> </SkillsCard>
+          <SkillsCard $isVisible={isVisible} $cardDelay={.2}> <JavaLogo /> </SkillsCard>
+          <SkillsCard $isVisible={isVisible} $cardDelay={.4}> <SpringLogo /> </SkillsCard>
+          <SkillsCard $isVisible={isVisible} $cardDelay={.6}> <SqlLogo /> </SkillsCard>
         </SkillsCardWrapper>
       </>
       }
       
       {isVisible && 
       <>
-        <Title isVisible={isVisible} titleSize={1} titleWeight={100} titleColor="#FFC25C">
+        <Title $isVisible={isVisible} $titleSize={1} $titleWeight={100} $titleColor="#FFC25C">
           FrontEnd
         </Title>
       
         <SkillsCardWrapper>
-        <SkillsCard isVisible={isVisible} cardDelay={0}> <JavascriptLogo /> </SkillsCard>
-        <SkillsCard isVisible={isVisible} cardDelay={0.2}> <ReactLogo /> </SkillsCard>
-        <SkillsCard isVisible={isVisible} cardDelay={0.4}> <CssLogo /> </SkillsCard>
+        <SkillsCard $isVisible={isVisible} $cardDelay={0}> <JavascriptLogo /> </SkillsCard>
+        <SkillsCard $isVisible={isVisible} $cardDelay={0.2}> <ReactLogo /> </SkillsCard>
+        <SkillsCard $isVisible={isVisible} $cardDelay={0.4}> <CssLogo /> </SkillsCard>
       </SkillsCardWrapper>
       
       </>
