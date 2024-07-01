@@ -13,12 +13,20 @@ const titleFadeInRight = keyframes`
 `;
 
 export const Title = styled.h2<TitleProps>`
-  font-size: ${({ titleSize }) => titleSize}rem;
-  font-weight: ${({ titleWeight }) => titleWeight};
-  color: ${({ titleColor }) => titleColor};
+  font-size: ${({ $titleSize }) => $titleSize}rem;
+  font-weight: ${({ $titleWeight }) => $titleWeight};
+  color: ${({ $titleColor }) => $titleColor};
   transition: all 300ms ease;
   margin-bottom: 1rem;
   font-family: 'Poppins', sans-serif;
-  animation: ${({isVisible}) => isVisible && css`${titleFadeInRight} 1s ease-in-out`};
-  
+  animation: ${({$isVisible}) => $isVisible && css`${titleFadeInRight} 1s ease-in-out`};
+`
+
+export const TitleNoProjects = styled.h2<TitleProps>`
+  font-size: ${({ $titleSize }) => $titleSize}rem;
+  font-weight: ${({ $titleWeight }) => $titleWeight};
+  color: ${({ $titleColor }) => $titleColor};
+  transition: all 300ms ease;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
 `
