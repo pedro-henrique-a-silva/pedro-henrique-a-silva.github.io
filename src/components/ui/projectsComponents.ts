@@ -1,5 +1,16 @@
 import { keyframes, styled } from 'styled-components';
-import { ProjectCardSocialMediaProps } from '../../type';
+import { ProjectCardSocialMediaProps } from '../../types/projectsTypes';
+
+const projectDescriptionEffectBackground = keyframes`
+0% {
+  transform: translateY(100%);
+  opacity: 0;
+  }
+100% {
+  transform: translateY(0);
+  opacity: .8;
+}
+`;
 
 const projectDescriptionEffect = keyframes`
 0% {
@@ -8,7 +19,7 @@ const projectDescriptionEffect = keyframes`
   }
 100% {
   transform: translateY(0);
-  opacity: .8;
+  opacity: 1;
 }
 `;
 
@@ -26,6 +37,10 @@ export const ProjectWrapper = styled.div`
     max-width: 100%;
     padding: 50px 0;
   }
+
+  @media screen and (max-width: 650px) {
+    padding: 1rem 2rem;
+  }
 `;
 
 export const ProjectCard = styled.div`
@@ -38,7 +53,10 @@ export const ProjectCard = styled.div`
   cursor: grab;
   transition: all 300ms ease;
 
-  &:hover div {
+  &:hover div:nth-child(1) {
+    animation: ${projectDescriptionEffectBackground} .5s ease-in-out forwards;
+  }
+  &:hover div#projectDescription  {
     animation: ${projectDescriptionEffect} .5s ease-in-out forwards;
   }
   
@@ -62,7 +80,7 @@ export const ProjectDescription = styled.div`
   flex-direction: column;
   width: 100%;
   /* background-color: #000; */
-  background-color: #281900;
+  z-index: 998;
   opacity: 0;
   padding: 20px;
   height: 100%;
@@ -103,4 +121,16 @@ export const ProjectCardSocialMedia = styled.a<ProjectCardSocialMediaProps>`
     border: 1px solid ${props => props.$socialColor};
     background: ${props => props.$socialColor};
   }
+`;
+
+export const ProjectBackgroudLayer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  border-radius: 10px;
+  transition: all 300ms ease;
 `;
