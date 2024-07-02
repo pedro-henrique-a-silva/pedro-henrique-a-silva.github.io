@@ -48,4 +48,10 @@ export const MenuLinkWrapper = styled.div`
   height: 100%;
   transition: all 300ms ease;
   animation: ${menuLinkFadeInLeft} 1s ease-in-out;
+
+  @media screen and (max-width: 950px) {
+    & a {
+      display: none
+    }
+  }
 `;
