@@ -9,4 +9,8 @@ export const FoldWrapper = styled.div`
   width: 100%;
   background-color: #252734;
   transition: all 300ms ease;
+
+  @media screen and (max-width: 650px) {
+    padding: 1rem 2rem;
+  }
 `;
