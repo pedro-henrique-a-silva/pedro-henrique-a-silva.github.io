@@ -1,4 +1,4 @@
-import { FilterMenuProps } from "../type"
+import { FilterMenuProps } from "../types/filterTypes"
 import { FilterButton, FilterWrapper } from "./ui/filterComponents"
 
 function FilterMenu( props: FilterMenuProps) {
@@ -15,9 +15,9 @@ function FilterMenu( props: FilterMenuProps) {
       <FilterButton onClick={() => setFilter("backend")} $isActived={filter === "backend"}>
         BackEnd
       </FilterButton>
-      <FilterButton onClick={() => setFilter("java-spring")} $isActived={filter === "java-spring"}>
+      {/* <FilterButton onClick={() => setFilter("java-spring")} $isActived={filter === "java-spring"}>
         JavaSpring
-      </FilterButton>
+      </FilterButton> */}
     </FilterWrapper>
   )
 }
