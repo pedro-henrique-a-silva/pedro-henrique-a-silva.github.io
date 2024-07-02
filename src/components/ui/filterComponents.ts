@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-import { FilterButtonProps } from '../../type';
+import { FilterButtonProps } from '../../types/filterTypes';
 
 
 export const FilterWrapper = styled.div`
