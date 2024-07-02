@@ -1,5 +1,6 @@
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react"
 import { 
+  AboutButtonDownloadCV,
   AboutContentWrapper, 
   AboutSocialMedia, 
   AboutSocialMediaWrapper, 
@@ -10,14 +11,16 @@ import {
 } from "./ui/aboutComponents"
 import { Paragraph } from "./ui/paragraph"
 import { Title } from "./ui/title"
+import { generatePDFContent } from "../utils/geraPDF"
 
 function About() {
   return (
-    <AboutWrapper>
+    <AboutWrapper id="about">
+      <ImgProfile src="foto.png"/>
       <AboutTitleWrapper>
         <AboutTitle>Pedro Silva.</AboutTitle>
+        <AboutButtonDownloadCV onClick={() => generatePDFContent()}>Download CV</AboutButtonDownloadCV>
       </AboutTitleWrapper>
-      <ImgProfile src="foto.png"/>
       <AboutContentWrapper>
         <Paragraph>- Sobre mim</Paragraph>
         <Title
@@ -27,16 +30,13 @@ function About() {
           $titleColor="#E8E7E7">
             FullStack Software Developer
         </Title>
-        <Paragraph>Olá, meu nome é Pedro Silva, sou desenvolvedor front-end e designer de interfaces. 
-          Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Faculdade Impacta de Tecnologia.
-          Meu foco é desenvolver soluções digitais que sejam acessíveis e intuitivas para o usuário final.
-          Tenho experiência com HTML, CSS, JavaScript, React, TypeScript, Next.js, Styled-Components, Figma e Adobe XD.
+        <Paragraph>Sou um Desenvolvedor web full stack versátil. Com uma base sólida como desenvolvedor, busco traduzir esse conhecimento em soluções intuitivas e eficazes. Minha paixão pela tecnologia vai além do código, também é motivada pela oportunidade de impactar positivamente a vida das pessoas.
         </Paragraph>
         <AboutSocialMediaWrapper>
-          <AboutSocialMedia $socialColor="#0077B5">
+          <AboutSocialMedia href="https://www.linkedin.com/in/pedro-henrique-a-silva/" target="_blank" $socialColor="#0077B5">
             <LinkedinLogo size={18}/>
           </AboutSocialMedia>
-          <AboutSocialMedia $socialColor="#7232bd">
+          <AboutSocialMedia href="https://github.com/pedro-henrique-a-silva" target="_blank" $socialColor="#7232bd">
             <GithubLogo size={18}/>
           </AboutSocialMedia>
         </AboutSocialMediaWrapper>
