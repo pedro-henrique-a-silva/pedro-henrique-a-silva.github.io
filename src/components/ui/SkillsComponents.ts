@@ -1,24 +1,6 @@
 import { css, keyframes, styled } from 'styled-components';
-import { SkillsCardProps } from '../../type';
-
-export const SkillsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  transition: all 300ms ease;
-`;
-
-export const SkillsCardWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  width: 100%;
-  transition: all 300ms ease;
-`;
+import { SkillsCardProps } from '../../types/skillsTypes';
+import { TitleProps } from '../../types/titleTypes';
 
 const cardHoverAnimation = keyframes`
 0% {
@@ -44,6 +26,38 @@ const skillCardFadeInRight = keyframes`
   transform: translateX(0);
   opacity: 1;
 }
+`;
+
+
+const skillDetailFadeInBottom = keyframes`
+0% {
+  transform: translate(200, -50%);
+  opacity: 0;
+  }
+100% {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+`;
+
+export const SkillsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all 300ms ease;
+`;
+
+export const SkillsCardWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: all 300ms ease;
 `;
 
 
@@ -84,4 +98,71 @@ export const SkillsCard = styled.div<SkillsCardProps>`
 &:hover::before {
 	animation: ${cardHoverAnimation} 0.7s 1 forwards;
 }
+`;
+
+export const SkillsDetailsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 997;
+  left: 0;
+  opacity: 0.5;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+`;
+
+export const SkillsDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 998;
+  background: #252734;
+  width: 50%;
+  border-radius: 10px;
+  padding: 20px;
+  animation: ${skillDetailFadeInBottom} .5s ease-in-out forwards;
+
+  @media screen and (max-width: 650px) {
+    width: 80%;
+  }
+`;
+
+
+export const SkillsDetailsClose = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #FFC25C;
+  font-size: 1.5rem;
+  transition: all 300ms ease;
+
+  &:hover {
+    border: 1px solid #FFC25C;
+  }
+`;
+
+export const TitleDetail = styled.h2<TitleProps>`
+  font-size: ${({ $titleSize }) => $titleSize}rem;
+  font-weight: ${({ $titleWeight }) => $titleWeight};
+  color: ${({ $titleColor }) => $titleColor};
+  transition: all 300ms ease;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+
+  @media screen and (max-width: 650px) {
+    margin-top: 2rem;
+  }
 `;
