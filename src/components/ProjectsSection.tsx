@@ -3,13 +3,13 @@ import Carousel from "./Carousel"
 import { ProjectWrapper } from "./ui/projectsComponents"
 import { Title } from "./ui/title"
 import FilterMenu from "./FilterMenu"
-import { ProjectsSectionProps } from "../type"
+import { ProjectsSectionProps } from "../types/projectsTypes"
 
 function ProjectsSection(props: ProjectsSectionProps) {
   const [filter, setFilter] = useState('all')
   const { projects } = props
   return (
-    <ProjectWrapper>
+    <ProjectWrapper id="projects">
       <Title $isVisible={true} $titleSize={1} $titleWeight={200} $titleColor="#FFC25C">
         Portifolio
       </Title>
