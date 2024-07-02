@@ -8,9 +8,14 @@ import SpringLogo from "./stacksLogo/SpringLogo"
 import SqlLogo from "./stacksLogo/SqlLogo"
 import { SkillsCard, SkillsCardWrapper, SkillsWrapper } from "./ui/SkillsComponents"
 import { Title } from "./ui/title"
+import { SkillsSectionProps } from "../types/skillsTypes"
+import HtmlLogo from "./stacksLogo/HtmlLogo"
+import NodeLogo from "./stacksLogo/NodeLogo"
 
-function SkillsSection() {
-  const [isVisible, setIsVisible] = useState(false); 
+function SkillsSection(props: SkillsSectionProps) {
+  const [isVisible, setIsVisible] = useState(false);
+  const { setSkillDetail } = props;
+  
   const ref = useRef(null);
 
   useEffect(() => {
@@ -29,9 +34,6 @@ function SkillsSection() {
       
       observer.observe(ref.current);
       
-      return () => {
-        if (ref.current) observer.unobserve(ref.current);
-      };
     }
   }, []);
 
@@ -51,10 +53,26 @@ function SkillsSection() {
         BackEnd
       </Title>
         <SkillsCardWrapper>
-          <SkillsCard $isVisible={isVisible} $cardDelay={0}> <ExpressLogo /> </SkillsCard>
-          <SkillsCard $isVisible={isVisible} $cardDelay={.2}> <JavaLogo /> </SkillsCard>
-          <SkillsCard $isVisible={isVisible} $cardDelay={.4}> <SpringLogo /> </SkillsCard>
-          <SkillsCard $isVisible={isVisible} $cardDelay={.6}> <SqlLogo /> </SkillsCard>
+          <SkillsCard
+          onClick={() => setSkillDetail('node')}
+          $isVisible={isVisible} 
+          $cardDelay={0}> <NodeLogo /> </SkillsCard>
+          <SkillsCard
+          onClick={() => setSkillDetail('api')}
+          $isVisible={isVisible} 
+          $cardDelay={0}> <ExpressLogo /> </SkillsCard>
+          <SkillsCard
+          onClick={() => setSkillDetail('java')}
+          $isVisible={isVisible} 
+          $cardDelay={.2}> <JavaLogo /> </SkillsCard>
+          <SkillsCard
+            onClick={() => setSkillDetail('spring')}
+            $isVisible={isVisible} 
+            $cardDelay={.4}> <SpringLogo /> </SkillsCard>
+          <SkillsCard
+            onClick={() => setSkillDetail('sql')}
+            $isVisible={isVisible} 
+            $cardDelay={.6}> <SqlLogo /> </SkillsCard>
         </SkillsCardWrapper>
       </>
       }
@@ -66,14 +84,27 @@ function SkillsSection() {
         </Title>
       
         <SkillsCardWrapper>
-        <SkillsCard $isVisible={isVisible} $cardDelay={0}> <JavascriptLogo /> </SkillsCard>
-        <SkillsCard $isVisible={isVisible} $cardDelay={0.2}> <ReactLogo /> </SkillsCard>
-        <SkillsCard $isVisible={isVisible} $cardDelay={0.4}> <CssLogo /> </SkillsCard>
+        <SkillsCard
+          onClick={() => setSkillDetail('javascript')}
+          $isVisible={isVisible} 
+          $cardDelay={0}> <JavascriptLogo /> </SkillsCard>
+        <SkillsCard
+          onClick={() => setSkillDetail('react')}
+          $isVisible={isVisible} 
+          $cardDelay={0.2}> <ReactLogo /> </SkillsCard>
+        <SkillsCard
+          onClick={() => setSkillDetail('css')}
+          $isVisible={isVisible} 
+          $cardDelay={0.4}> <CssLogo /> </SkillsCard>
+        <SkillsCard
+          onClick={() => setSkillDetail('react')}
+          $isVisible={isVisible} 
+          $cardDelay={0.4}> <HtmlLogo /> </SkillsCard>
       </SkillsCardWrapper>
       
       </>
       }
-     
+    
     </SkillsWrapper>
   )
 }
