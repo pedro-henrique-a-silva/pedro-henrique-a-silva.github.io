@@ -1,5 +1,5 @@
 import { css, keyframes, styled } from 'styled-components';
-import { TitleProps } from '../../type';
+import { TitleProps } from '../../types/titleTypes';
 
 const titleFadeInRight = keyframes`
   from {
@@ -17,9 +17,10 @@ export const Title = styled.h2<TitleProps>`
   font-weight: ${({ $titleWeight }) => $titleWeight};
   color: ${({ $titleColor }) => $titleColor};
   transition: all 300ms ease;
+  opacity: 0;
   margin-bottom: 1rem;
   font-family: 'Poppins', sans-serif;
-  animation: ${({$isVisible}) => $isVisible && css`${titleFadeInRight} 1s ease-in-out`};
+  animation: ${({$isVisible}) => $isVisible && css`${titleFadeInRight} 1s ease-in-out forwards`};
 `
 
 export const TitleNoProjects = styled.h2<TitleProps>`
