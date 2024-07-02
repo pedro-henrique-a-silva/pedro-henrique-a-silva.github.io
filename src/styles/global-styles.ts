@@ -39,8 +39,29 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   background-color: #333646;
+  min-width: 400px;
   font-family: 'Poppins', sans-serif;
   transition: all 300ms ease;
+  
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #252734 transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 50px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #000;
 }
 
 main {
