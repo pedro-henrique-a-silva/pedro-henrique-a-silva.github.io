@@ -1,34 +1,47 @@
+import About from './components/AboutSection'
+import HeaderSection from './components/HeaderSection'
+import ProjectsSection from './components/ProjectsSection'
+import SkillsSection from './components/SkillsSection'
+import { FoldWrapper } from './components/ui/foldWrapper'
+import data from './data/data'
+import GlobalStyles from './styles/global-styles'
+import FooterSection from './components/FooterSection'
+import { SkillsDetails, SkillsDetailsClose, SkillsDetailsWrapper, TitleDetail } from './components/ui/SkillsComponents'
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import skillsData from './data/skillsData'
+import { skillDetailType } from './types'
+import { ParagraphDetails } from './components/ui/paragraph'
+import { X } from '@phosphor-icons/react'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [skillDetail, setSkillDetail] = useState<skillDetailType>('');
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <GlobalStyles />
+      <HeaderSection />
+      <About />
+      <FoldWrapper>
+        <SkillsSection skillDetail={skillDetail} setSkillDetail={setSkillDetail}/>
+      </FoldWrapper>
+      <ProjectsSection projects={data} />
+      <FooterSection/>
+      {skillDetail !== '' && <>
+      <SkillsDetailsWrapper></SkillsDetailsWrapper>
+      <SkillsDetails>
+        <TitleDetail $isVisible={true} $titleSize={1.5} $titleWeight={400} $titleColor="#E8E7E7">
+          {skillsData[skillDetail].title}
+        </TitleDetail>
+        <ParagraphDetails>{skillsData[skillDetail].summarie}</ParagraphDetails>
+        <SkillsDetailsClose onClick={() => setSkillDetail('')}>
+          <X size={32} />
+          </SkillsDetailsClose>
+      </SkillsDetails>
+        </>
+      }
     </>
+
   )
 }
 
