@@ -174,7 +174,7 @@ element.innerHTML =`
          <p>
           Desenvolvedor Full-Stack com mais de uma década de experiência em suporte de TI e um ano de experiência em desenvolvimento web.
           busco oportunidades desafiadoras onde possa aplicar meu conhecimento técnico a fim de contribuir para o desenvolvimento de soluções inovadoras.
-          Estou determinado a colaborar em equipe, visando alcançar os objetivos da empresa e promover o crescimento mútuo
+          Estou determinado a colaborar em equipe, visando alcançar os objetivos da empresa e promover o crescimento mútuo.
          </p>
        </div>
 
@@ -250,7 +250,7 @@ element.innerHTML =`
           <p>
             Esse é um projeto com duas versões de backend utilizando Express e NestJS.
             O projeto também inclui uma aplicação frontend que consome os serviços dos backends 
-            para exibir receitas de comidas e bebidas
+            para exibir receitas de comidas e bebidas.
           </p>
           <p>Link: <a href="https://github.com/pedro-henrique-a-silva/receitas-fullstack" target="_blank">github.com/pedro-henrique-a-silva/receitas-fullstack</a></p>
         </div>
@@ -262,7 +262,7 @@ element.innerHTML =`
             Mercado Livre. Os usuários podem explorar produtos por categoria ou palavra-chave, 
             adicionar itens ao carrinho de compras e finalizar a compra em uma página de checkout 
             completa. Aqui estão detalhes sobre as tecnologias utilizadas e como aproveitar ao máximo a 
-            aplicação
+            aplicação.
           </p>
           <p>Link: <a href="https://github.com/pedro-henrique-a-silva/online-store" target="_blank">github.com/pedro-henrique-a-silva/online-store</a></p>
         </div>
