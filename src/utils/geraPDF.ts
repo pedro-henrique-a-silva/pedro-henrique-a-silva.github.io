@@ -9,6 +9,7 @@ export const generatePDFContent = () => {
     filename: 'pedro-silva-CV.pdf',
     image: { type: 'jpeg', quality: 1 },
     html2canvas: { scale: 2 },
+    enableLinks: true,
     jsPDF: { 
       format: 'a4',
       putOnlyUsedFonts:true, 
